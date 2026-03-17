@@ -1,0 +1,144 @@
+.teams-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.teams-page__header {
+  margin-bottom: 1.5rem;
+}
+
+.teams-page__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.teams-page__form {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.teams-page__input {
+  flex: 1;
+  padding: 0.6rem 0.875rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.teams-page__input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+
+.teams-page__create-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.teams-page__create-btn:hover:not(:disabled) {
+  background: #4338ca;
+}
+
+.teams-page__create-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.teams-page__error {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.teams-page__loading {
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem;
+}
+
+.teams-page__empty {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #9ca3af;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 2px dashed #e5e7eb;
+}
+
+.teams-page__empty p { margin: 0.25rem 0; }
+
+.teams-page__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.teams-page__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: box-shadow 0.15s;
+}
+
+.teams-page__item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.teams-page__team-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.teams-page__team-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.teams-page__team-meta {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.teams-page__delete-btn {
+  background: none;
+  border: 1px solid #fca5a5;
+  color: #dc2626;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.teams-page__delete-btn:hover {
+  background: #fef2f2;
+}

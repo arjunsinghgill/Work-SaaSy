@@ -1,0 +1,27 @@
+.mention-dropdown {
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 0;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 0.25rem 0;
+  margin: 0;
+  min-width: 160px;
+  z-index: 300;
+}
+
+.mention-dropdown__item {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.875rem;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.mention-dropdown__item:hover {
+  background: #eef2ff;
+  color: #4f46e5;
+}

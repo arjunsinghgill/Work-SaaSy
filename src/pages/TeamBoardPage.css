@@ -1,0 +1,158 @@
+.team-board {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.team-board__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-board__back {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0;
+  font-weight: 500;
+}
+
+.team-board__back:hover { text-decoration: underline; }
+
+.team-board__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.team-board__error {
+  color: #dc2626;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.team-board__loading {
+  text-align: center;
+  padding: 2rem;
+  color: #9ca3af;
+}
+
+.team-board__layout {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.team-board__sidebar {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.team-board__members-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 0.75rem 0;
+}
+
+.team-board__members-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.team-board__member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.team-board__member-name {
+  font-size: 0.875rem;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.team-board__owner-badge {
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.team-board__remove-btn {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: color 0.1s;
+}
+
+.team-board__remove-btn:hover { color: #dc2626; }
+
+.team-board__add-member {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.team-board__add-input {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+}
+
+.team-board__add-input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+
+.team-board__add-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.team-board__add-btn:hover { background: #4338ca; }
+
+.team-board__add-error {
+  color: #dc2626;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .team-board__layout {
+    grid-template-columns: 1fr;
+  }
+}

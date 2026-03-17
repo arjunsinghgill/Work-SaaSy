@@ -1,0 +1,46 @@
+.inbox-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.inbox-page__header {
+  margin-bottom: 1.5rem;
+}
+
+.inbox-page__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.25rem 0;
+}
+
+.inbox-page__subtitle {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.inbox-page__loading,
+.inbox-page__error {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+}
+
+.inbox-page__error {
+  color: #dc2626;
+}
+
+.inbox-page__empty {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #9ca3af;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 2px dashed #e5e7eb;
+}
+
+.inbox-page__empty p {
+  margin: 0.25rem 0;
+}
